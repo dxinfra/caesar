@@ -1,0 +1,25 @@
+{
+  "containerDefinitions": [
+    {
+      "name": "Jarvis-tomcat",
+      "image": "768502287836.dkr.ecr.ap-southeast-1.amazonaws.com/jarvis-dev-ecr:tomcat_0.0",
+
+      "cpu": 100,
+      "entryPoint": [
+      "/sbin/init"
+      ],
+      "portMappings": [
+        {
+          "hostPort": 0,
+          "protocol": "tcp",
+          "containerPort": 8080
+        }
+      ],
+      "user": "root",
+      "privileged": true,
+      "memory": 100,
+      "essential": true
+    }
+  ],
+  "family": "JarvisQa-WebApp"
+}
