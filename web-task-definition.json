@@ -2,7 +2,7 @@
   "containerDefinitions": [
     {
       "name": "Jarvis-tomcat",
-      "image": ".dkr.ecr.ap-southeast-1.amazonaws.com/jarvis-dev-ecr:tomcat_0.0",
+      "image": "AWS_ACCOUNT_NUMBER.dkr.ecr.ap-southeast-1.amazonaws.com/jarvis-dev-ecr:tomcat_0.0",
 
       "cpu": 100,
       "entryPoint": [
